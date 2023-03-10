@@ -1,0 +1,20 @@
+{
+  "name": "neil-qa-assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/selenium-cucumber-js/index.js -s ./step-definitions -x 50000"
+  },
+  "keywords": [],
+  "author": "Neil Torrentira",
+  "license": "MIT",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "chromedriver": "^111.0.0",
+    "selenium-cucumber-js": "^1.0.3",
+    "selenium-webdriver": "^4.8.1"
+  }
+}
