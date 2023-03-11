@@ -1,9 +1,9 @@
 # Neil Torrentira Solutions/Answer for Xendit QA Assessment Instructions
 
 ## Tools Used:
-*Javascript/Cucumber-js Selenium WebDriver*
+*Javascript/Cucumber-js Selenium WebDriver in Cucumber/BDD*
 
-## Added Positive tests for the ff.:
+## Added Positive and Negative tests for the ff.:
 1. Subtraction
 2. Division
 3. Addition
