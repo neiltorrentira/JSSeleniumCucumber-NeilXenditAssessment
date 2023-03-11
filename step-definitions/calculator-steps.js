@@ -1,5 +1,5 @@
 //const expect = require('chai').expect;
-
+var baseUrl = 'https://www.online-calculator.com/full-screen-calculator/';
 var webdriver=require('selenium-webdriver'),
 By = webdriver.By,
 until = webdriver.until;
@@ -7,16 +7,15 @@ var imagePath;
 
 module.exports = function () {
  this.Given(/^Open chrome browser and start application$/, function () {
-        return driver.get('https://www.online-calculator.com/full-screen-calculator/');
+        return driver.get(baseUrl);
        });
   this.When(/^I enter following values and press CE button$/, function (dataTable) {
         var strValue1=dataTable.raw()[0][1];
         var strValue2=dataTable.raw()[1][1];
         var strOperator=dataTable.raw()[2][1];
       });
-this.Then(/^I should be able to see$/, function (table) {
-       
-       });
+this.Then(/^I should be able to see$/, function (table) {});
+this.Then(/^I shouldn't be able to see$/, function (table) {});       
 
 function takeScreenshot() {
     const fs = require("fs");
